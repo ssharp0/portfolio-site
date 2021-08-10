@@ -5,6 +5,7 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
  <!-- Google Fonts -->
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,65 +14,76 @@
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300&display=swap"
   rel="stylesheet">
- <!-- font awesome for icons: https://fontawesome.com/v4.7/icons/ -->
+
+ <!-- font awesome for icons: https://fontawesome.com/v4.7/icons/  - consider kit -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
   integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
  <!-- Reset CSS -->
- <link rel="stylesheet" href="./assets/reset.css">
+ <link rel="stylesheet" href="./assets/css/reset.css">
+
  <!-- Boostrap css -->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
  <!-- Style Sheet -->
- <link rel="stylesheet" href="./assets/style.css">
- <title>My Portfolio</title>
+ <link rel="stylesheet" href="./assets/css/style.css">
+
+ <!-- Title Tab -->
+ <title>Portfolio-Site</title>
 </head>
 
+<!-- Body Starts -->
 <body>
 
- <!-- Header -->
+ <!-- Header Start -->
  <header>
-  <!-- setting bootstrap nav bar -->
+
+  <!-- nav bar -->
   <nav class="navbar navbar-expand-lg rounded">
-   <!-- setting up container -->
-   <div class="container-fluid">
-    <!-- setting navbar brand -->
-    <a class="navbar-brand mb-0 h1" href="#">Scott</a>
-    <!-- navbar button toggler when collapsed -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- division for the collapse -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-     <!-- unordered list for the navbar -->
-     <ul class="nav navbar-nav">
-      <!-- About list item/link -->
-      <li class="nav-item">
-       <a class="nav-link" href="#"><i class="fa fa-user"></i>About</a>
-      </li>
-      <!-- Contact list item/link -->
-      <li class="nav-item">
-       <a class="nav-link" href="#"><i class="fa fa-envelope"></i>Contact</a>
-      </li>
-      <!-- Portfolio dropdown -->
-      <li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        <i class="fa fa-briefcase"></i>Portfolio
-       </a>
-       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <li><a class="dropdown-item" href="#">Project One</a></li>
-        <li><a class="dropdown-item" href="#">Project Two</a></li>
-        <li>
-         <hr class="dropdown-divider">
+    <!-- setting up container -->
+    <div class="container-fluid">
+      <!-- navbar brand - link to home/index github hosted site -->
+      <a class="navbar-brand" href="https://ssharp0.github.io/portfolio-site/">Scott</a>
+      <!-- navbar button toggler when collapsed -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- division for the collapse -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- unordered list for the navbar -->
+      <ul class="nav navbar-nav">
+        <!-- About list item/link -->
+        <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-user"></i>About</a>
         </li>
-        <li><a class="dropdown-item" href="#">Other</a></li>
-       </ul>
-      </li>
+        <!-- Contact list item/link -->
+        <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-envelope"></i>Contact</a>
+        </li>
+        <!-- Portfolio dropdown Start-->
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <i class="fa fa-briefcase"></i>Portfolio
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Project One</a></li>
+          <li><a class="dropdown-item" href="#">Project Two</a></li>
+          <li>
+          <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Other</a></li>
+        </ul>
+        </li>
+      </div>
     </div>
-   </div>
+  </nav>
+  
  </header>
+ <!-- Header End -->
 
  <br>
  <br>
