@@ -1,7 +1,11 @@
+/* Body Styling */
+
 body {
  margin: 0;
  background-color: #C6C7C4;
 }
+
+/* Navbar in the Header Styling */
 
 header .navbar {
  background-color: #353B3C;
@@ -10,14 +14,11 @@ header .navbar {
  font-family: 'Bebas Neue', cursive;
  font-size: 200%;
  height: auto;
+ /* help with transparency with drop down menu */
  z-index: 9999;
 }
 
-header::after {
- content: '';
- display: table;
- clear: both;
-}
+/* Styling for navbar-brand */
 
 .navbar-brand {
  float: left;
@@ -27,47 +28,16 @@ header::after {
  color: black;
 }
 
+/* Styling for navbar-brand when user is hovering over link/text */
+
 .navbar-brand:hover {
  color: #846A6A;
 }
 
+/* Styling for nav-links */
+
 .nav-link {
  color: #EEF0F2;
-}
-
-.nav-link:hover {
- /* hovered link color */
- color: #beb3b9;
-}
-
-/* https://mdbootstrap.com/docs/b4/jquery/navigation/hamburger-menu/ */
-
-.navbar.navbar .navbar-toggler-icon {
- background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger3.svg?color=00FBD8');
-}
-
-.navbar {
- border-radius: 0;
- margin-bottom: 0;
-}
-
-/* Fixes dropdown menus placed on the right side */
-
-/* .ml-auto .dropdown-menu {
- left: auto !important;
- right: 0px;
-} */
-
-nav ul {
- /* tighten the nav bar more */
- margin: 0;
- /* space between items, not quite necessary here */
- padding: 0;
- /* remove dots from list */
- list-style: none;
-}
-
-nav li {
  /* could use float: left */
  display: inline-block;
  /* to give space (left) between the list items */
@@ -78,65 +48,82 @@ nav li {
  position: relative;
 }
 
-nav ul li a {
- color: #EEF0F2;
- /* remove line on link */
- text-decoration: none;
- /* transform text to uppercase */
- text-transform: uppercase;
-}
+/* Styling for nav-links when hovering over link/text */
 
-nav ul li a:hover {
+.nav-link:hover {
  /* hovered link color */
- color: #A2999E;
+ color: #beb3b9;
 }
 
-/* inlink before text (for the bars on top) */
+/* Styling for the dropdown menu on nav bar */
+
+.dropdown-menu {
+ font-size: 1.5rem;
+}
+
+/* Drop Down Item Styling on nav bar */
+
+.dropdown-item {
+ color: #353B3C;
+}
+
+/* Hamburger toggler unique for nav dropdown on smaller pages */
+/* https://mdbootstrap.com/docs/b4/jquery/navigation/hamburger-menu/ */
+
+.navbar-toggler-icon {
+ background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger3.svg?color=00FBD8');
+}
+
+
+/* Styling to create the line above the links/anchors in the nav start not hovering over */
 
 nav a::before {
+ /* Show blank before (before hovering over) */
  content: '';
  display: block;
  height: 5px;
  width: 100%;
  background-color: white;
- /*abosoluteposition-whichisrelativetothelistitem*/
+ /*abosolute position-which is relative to the list item*/
  position: absolute;
- /*addatoptomakeitverytopofpage*/
+ /*add a top to make it very top of page*/
  top: 0;
  width: 0%;
 }
+
+/* Styling for line above link/anchor to span full width when hovering over  */
 
 nav a:hover::before {
  width: 100%;
 }
 
-nav a::after {
- color: black;
-}
+/* Styling to add padding between the icons */
 
 i {
  padding: 15px;
 }
 
-.jumbotron {
+/* Styling for the main section jumbotron */
+
+main .jumbotron {
+ margin-top: 5%;
+ margin-bottom: 5%;
  opacity: 75%;
- padding: 20px;
+ padding: 10px;
  background-color: #846A6A;
  color: #EEF0F2;
  font-family: 'Bebas Neue', cursive;
  font-family: 'Josefin Sans', sans-serif;
  font-size: 175%;
- border-radius: 5%;
- -webkit-border-radius: 5%;
- -moz-border-radius: 5%;
- -ms-border-radius: 5%;
- -o-border-radius: 5%;
+ /*togetroundedborder*/border-radius: 10%;
+ -webkit-border-radius:10%;
+ -moz-border-radius:10%;
+ -ms-border-radius:10%;
+ -o-border-radius:10%;
 }
 
-.dropdown .dropdown-menu {
- background-color: white;
- color: black;
-}
+
+/* Styling for the footer section */
 
 footer {
  position: fixed;
