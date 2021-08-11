@@ -103,6 +103,14 @@
   -ms-border-radius: 10%;
   -o-border-radius: 10%;
  }
+
+  /* Styling for Quote Section */
+ .quote {
+  font-size: larger;
+  color: black;
+
+ }
+
  /* Styling for the footer section */
  footer {
   position: fixed;
@@ -111,7 +119,11 @@
   width: 100%;
   background-color: white;
   color: #846A6A;
-  height: 5%;
+  height: 8%;
+ }
+
+ footer h6 {
+  padding: 5%;
  }
  /* Styling for contact.html */
  /* Styling for input type text and select elements and textarea */
@@ -167,7 +179,6 @@
  .projects-body img {
   height: 30%;
   width: 30%;
-  border: solid black 5px;
  }
  /* Styling for the projects-body anchor links */
  .projects-body a {
