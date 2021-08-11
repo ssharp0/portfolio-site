@@ -4,9 +4,154 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300&display=swap"
+  rel="stylesheet">
+ 
+ <!-- font awesome for icons: https://fontawesome.com/v4.7/icons/  - consider kit -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+ 
+ <!-- Reset CSS -->
+ <link rel="stylesheet" href="./assets/css/reset.css">
+ 
+ <!-- Boostrap css -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+ 
+ <!-- Style Sheet -->
+ <link rel="stylesheet" href="./assets/css/style.css">
  <title>Contact</title>
 </head>
 <body>
+
+ <!-- Header Start -->
+ <header>
+
+  <!-- nav bar start-->
+  <nav class="navbar navbar-expand-lg rounded">
+
+   <!-- setting up container in navbar-->
+   <div class="container-fluid">
+    <!-- navbar brand - link to home/index github hosted site -->
+    <a class="navbar-brand" href="https://ssharp0.github.io/portfolio-site/">Scott</a>
+    <!-- navbar button toggler when collapsed (mobile/smaller screen)-->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- division for the collapse -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+     <!-- unordered list for the navbar -->
+     <ul class="nav navbar-nav">
+
+      <!-- About list item/link - linked to index.html-->
+      <li class="nav-item active">
+       <a class="nav-link" href="./index.html"><i class="fa fa-user"></i>About</a>
+      </li>
+
+      <!-- Contact list item/link - linked to contact.html -->
+      <li class="nav-item">
+       <a class="nav-link" href="./contact.html"><i class="fa fa-envelope"></i>Contact</a>
+      </li>
+
+      <div class="dropdown">
+       <!-- Portfolio dropdown Start-->
+       <li class="nav-item dropdown">
+        <!-- Portfolio dropwdown toggle-->
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+         aria-expanded="false">
+         <i class="fa fa-briefcase"></i>Portfolio
+        </a>
+
+        <!-- Portfolio dropdown menu -->
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <li><a class="dropdown-item" href="#">Project One</a></li>
+         <li><a class="dropdown-item" href="#">Project Two</a></li>
+         <li>
+          <hr class="dropdown-divider">
+         </li>
+         <li><a class="dropdown-item" href="./portfolio.html">All Projects</a></li>
+        </ul>
+
+       </li>
+       <!-- Porfolio Dropdown End -->
+      </div>
+
+     </ul>
+
+    </div>
+
+   </div>
+
+  </nav>
+  <!-- nav bar end -->
+
+ </header>
+ <!-- Header End -->
+
+ <!-- Main Start -->
+ <main>
+
+  <div class="container contact-form">
+
+   <form action="form-group">
+
+    <!-- Input (text) for name -->
+    <label for="fullname">Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Please type your name here...">
+
+    <!-- Input (email text) for email -->
+    <label for="useremail">Email</label>
+    <input type="email" class="form-control" name="useremail" placeholder="Please type your email here...">
+
+    <!-- Input (message text) for a message-->
+    <label for="message">Message</label>
+    <textarea name="message" id="message" style="height:200px" placeholder="You can write a message here..."></textarea>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit" name="submitbutton">
+
+   </form>
+
+  </div>
+
+ </main>
+ <!-- Main End -->
+
+ <!-- Foot Start -->
+ <footer class="footer text-center">
+
+  <section class="d-flex justify-content-center">
+   <div>
+
+    <!-- Google Icon -->
+    <a href="#" class="text-reset">
+     <i class="fab fa-google"></i>
+    </a>
+
+    <!-- Github Icon -->
+    <a href="#" class="text-reset">
+     <i class="fab fa-github"></i>
+    </a>
+
+    <!-- LinkedIn Icon -->
+    <a href="#" class="text-reset">
+     <i class="fab fa-linkedin"></i>
+    </a>
+
+   </div>
+  </section>
+
+ </footer>
+ <!-- Footer End -->
  
 </body>
 </html>
