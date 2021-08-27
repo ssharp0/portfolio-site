@@ -5,193 +5,248 @@
   width: 100%;
  } */
 
- /* Body Styling */
- body {
-  margin: 0;
-  background-color: #C6C7C4;
- }
- /* Navbar in the Header Styling */
- header .navbar {
-  background-color: #353B3C;
-  opacity: 75%;
-  font-weight: 300;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 200%;
-  height: auto;
-  /* help with transparency with drop down menu */
-  z-index: 9999;
- }
- /* Styling for navbar-brand */
- .navbar-brand {
-  float: left;
-  font-size: 50px;
-  padding-top: 25px;
-  padding-left: 50px;
-  color: black;
- }
- /* Styling for navbar-brand when user is hovering over link/text */
- .navbar-brand:hover {
-  color: #846A6A;
- }
- /* Styling for nav-links */
- .nav-link {
-  color: #EEF0F2;
-  /* could use float: left */
-  display: inline-block;
-  /* to give space (left) between the list items */
-  margin-left: 70px;
-  /* add padding at the top */
-  padding-top: 25px;
-  /* position - helps with lines above links*/
-  position: relative;
- }
- /* Styling for nav-links when hovering over link/text */
- .nav-link:hover {
-  /* hovered link color */
-  color: #beb3b9;
- }
- /* Styling for the dropdown menu on nav bar */
- .dropdown-menu {
-  font-size: 1.5rem;
- }
- /* Drop Down Item Styling on nav bar */
- .dropdown-item {
-  color: #353B3C;
- }
- /* Hamburger toggler unique for nav dropdown on smaller pages */
- /* https://mdbootstrap.com/docs/b4/jquery/navigation/hamburger-menu/ */
- .navbar-toggler-icon {
-  background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger3.svg?color=00FBD8');
- }
- /* Styling to create the line above the links/anchors in the nav start not hovering over */
- nav a::before {
-  /* Show blank before (before hovering over) */
-  content: '';
-  display: block;
-  height: 5px;
-  width: 100%;
-  background-color: white;
-  /*abosolute position-which is relative to the list item*/
-  position: absolute;
-  /*add a top to make it very top of page*/
-  top: 0;
-  width: 0%;
- }
- /* Styling for line above link/anchor to span full width when hovering over  */
- nav a:hover::before {
-  width: 100%;
- }
- /* Styling to add padding between the icons */
- i {
-  padding: 15px;
- }
- /* Styling for the main section jumbotron */
- main .jumbotron {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  opacity: 75%;
-  padding: 10px;
-  background-color: #846A6A;
-  color: #EEF0F2;
-  font-family: 'Bebas Neue', cursive;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 175%;
-  /*togetroundedborder*/
-  border-radius: 10%;
-  -webkit-border-radius: 10%;
-  -moz-border-radius: 10%;
-  -ms-border-radius: 10%;
-  -o-border-radius: 10%;
- }
+/* Body Styling */
 
-  /* Styling for Quote Section */
- .quote {
-  font-size: larger;
-  color: black;
+body {
+ margin: 0;
+ background-color: #C6C7C4;
+}
 
- }
+/* Navbar in the Header Styling */
 
- /* Styling for the footer section */
- footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: #846A6A;
-  height: 8%;
- }
+header .navbar {
+ background-color: #353B3C;
+ opacity: 75%;
+ font-weight: 300;
+ font-family: 'Bebas Neue', cursive;
+ font-size: 200%;
+ height: auto;
+ /* help with transparency with drop down menu */
+ z-index: 9999;
+}
 
- footer h6 {
-  padding: 5%;
- }
- /* Styling for contact.html */
- /* Styling for input type text and select elements and textarea */
- input[type=text], input[type=email], select, textarea {
-  width: 100%;
-  padding: 15px;
-  border: solid black 2px;
-  box-sizing: border-box;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  /* allow user to resize the textarea vertically instead of horizontally */
-  resize: vertical;
- }
- /* Styling for submit button */
- input[type=submit] {
-  background-color: #846A6A;
-  color: white;
-  padding: 15px 25px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
- }
- /* Styling to add color when mouse hovers over submit button  */
- input[type=submit]:hover {
-  background-color: black;
- }
- /* Stying for contact form to add some space */
- .contact-form {
-  margin-top: 5%;
-  border-radius: 5px;
-  background-color: #EEF0F2;
-  padding: 20px;
- }
- /* Styling for label to add some padding between the content in the form */
- label {
-  padding: 0.75%;
- }
- /* Styling for Portfolio html */
- /* styling for the projects-body */
- .projects-body {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  opacity: 75%;
-  padding: 10px;
-  color: #EEF0F2;
-  font-family: 'Bebas Neue', cursive;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 175%;
- }
- /* Styling for the img in the projects-body */
- .projects-body img {
-  height: 30%;
-  width: 30%;
- }
- /* Styling for the projects-body anchor links */
- .projects-body a {
-  color: #EEF0F2;
- }
- /* Styling for when user hovers over projects-body anchor links  */
- .projects-body a:hover {
-  color: black;
- }
- /* Styling for the projects-body panel */
- .projects-body .panel {
-  background-color: #846A6A;
-  height: 100%;
-  width: 100%;
-  padding: 2%;
- }
+/* Styling for navbar-brand */
+
+.navbar-brand {
+ float: left;
+ font-size: 50px;
+ padding-top: 25px;
+ padding-left: 50px;
+ color: black;
+}
+
+/* Styling for navbar-brand when user is hovering over link/text */
+
+.navbar-brand:hover {
+ color: #846A6A;
+}
+
+/* Styling for nav-links */
+
+.nav-link {
+ color: #EEF0F2;
+ /* could use float: left */
+ display: inline-block;
+ /* to give space (left) between the list items */
+ margin-left: 70px;
+ /* add padding at the top */
+ padding-top: 25px;
+ /* position - helps with lines above links*/
+ position: relative;
+}
+
+/* Styling for nav-links when hovering over link/text */
+
+.nav-link:hover {
+ /* hovered link color */
+ color: #beb3b9;
+}
+
+/* Styling for the dropdown menu on nav bar */
+
+.dropdown-menu {
+ font-size: 1.5rem;
+}
+
+/* Drop Down Item Styling on nav bar */
+
+.dropdown-item {
+ color: #353B3C;
+}
+
+/* Hamburger toggler unique for nav dropdown on smaller pages */
+
+/* https://mdbootstrap.com/docs/b4/jquery/navigation/hamburger-menu/ */
+
+.navbar-toggler-icon {
+ background-image: url('https://mdbcdn.b-cdn.net/img/svg/hamburger3.svg?color=00FBD8');
+}
+
+/* Styling to create the line above the links/anchors in the nav start not hovering over */
+
+nav a::before {
+ /* Show blank before (before hovering over) */
+ content: '';
+ display: block;
+ height: 5px;
+ width: 100%;
+ background-color: white;
+ /*abosolute position-which is relative to the list item*/
+ position: absolute;
+ /*add a top to make it very top of page*/
+ top: 0;
+ width: 0%;
+}
+
+/* Styling for line above link/anchor to span full width when hovering over  */
+
+nav a:hover::before {
+ width: 100%;
+}
+
+/* Styling to add padding between the icons */
+
+i {
+ padding: 15px;
+}
+
+/* Styling for the main section jumbotron */
+
+main .jumbotron {
+ margin-top: 5%;
+ margin-bottom: 5%;
+ opacity: 75%;
+ padding: 10px;
+ background-color: #846A6A;
+ color: #EEF0F2;
+ font-family: 'Bebas Neue', cursive;
+ font-family: 'Josefin Sans', sans-serif;
+ font-size: 175%;
+ /*togetroundedborder*/
+ border-radius: 10%;
+ -webkit-border-radius: 10%;
+ -moz-border-radius: 10%;
+ -ms-border-radius: 10%;
+ -o-border-radius: 10%;
+}
+
+/* Styling for Quote Section */
+
+.quote {
+ font-size: larger;
+ color: black;
+}
+
+/* Styling for the footer section */
+
+footer {
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+ background-color: white;
+ color: #846A6A;
+ height: 8%;
+}
+
+footer h6 {
+ padding: 5%;
+}
+
+/* Styling for contact.html */
+
+/* Styling for input type text and select elements and textarea */
+
+input[type=text], input[type=email], select, textarea {
+ width: 100%;
+ padding: 15px;
+ border: solid black 2px;
+ box-sizing: border-box;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ /* allow user to resize the textarea vertically instead of horizontally */
+ resize: vertical;
+}
+
+/* Styling for submit button */
+
+input[type=submit] {
+ background-color: #846A6A;
+ color: white;
+ padding: 15px 25px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+/* Styling to add color when mouse hovers over submit button  */
+
+input[type=submit]:hover {
+ background-color: black;
+}
+
+/* Stying for contact form to add some space */
+
+.contact-form {
+ margin-top: 5%;
+ border-radius: 5px;
+ background-color: #EEF0F2;
+ padding: 20px;
+}
+
+/* Styling for label to add some padding between the content in the form */
+
+label {
+ padding: 0.75%;
+}
+
+/* Styling for Portfolio html */
+
+/* styling for the projects-body */
+
+.projects-body {
+ margin-top: 5%;
+ margin-bottom: 5%;
+ margin-left: 5%;
+ margin-right: 5%;
+ opacity: 75%;
+ padding: 10px;
+ color: #EEF0F2;
+ font-family: 'Bebas Neue', cursive;
+ font-family: 'Josefin Sans', sans-serif;
+ font-size: 175%;
+}
+
+/* Styling for the img in the projects-body */
+
+.projects-body img {
+ height: 65%;
+ width: 65%;
+}
+
+/* Styling for the projects-body anchor links */
+
+.projects-body a {
+ color: #EEF0F2;
+}
+
+/* Styling for when user hovers over projects-body anchor links  */
+
+.projects-body a:hover {
+ color: black;
+}
+
+/* Styling for the projects-body panel */
+
+.projects-body .panel {
+ background-color: #846A6A;
+ height: 100%;
+ width: 100%;
+ padding: 2%;
+}
+
+/* styling for button (project page) */
+.btn {
+ background-color: #353B3C;
+ color: white;
+}
