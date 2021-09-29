@@ -222,6 +222,12 @@ label {
 .projects-body img {
  height: 65%;
  width: 65%;
+ object-fit: cover;
+ border-radius: 2%;
+ -webkit-border-radius: 2%;
+ -moz-border-radius: 2%;
+ -ms-border-radius: 2%;
+ -o-border-radius: 2%;
 }
 
 /* Styling for the projects-body anchor links */
@@ -243,10 +249,24 @@ label {
  height: 100%;
  width: 100%;
  padding: 2%;
+ border-radius: 2%;
+ -webkit-border-radius: 2%;
+ -moz-border-radius: 2%;
+ -ms-border-radius: 2%;
+ -o-border-radius: 2%;
 }
 
 /* styling for button (project page) */
+
 .btn {
  background-color: #353B3C;
  color: white;
+}
+
+/* styling for panel heading on portfolio */
+
+.panel-heading {
+ font-weight: bolder;
+ font-size: larger;
+ font-family: Arial, Helvetica, sans-serif;
 }
